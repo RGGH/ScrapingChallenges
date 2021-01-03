@@ -13,7 +13,7 @@
     $("button").click(function(){
       $.ajax({url: "secret.txt", success: function(result){
         $("#div1").html(result);
-          $(this).hide();
+        $("button.cm").hide()
       }});
     });
   });
@@ -58,8 +58,8 @@
   <div id="customId"></div>
   <div class="div1"></div>
 <h5>Find some more content by making use of the button below</h5>
-<h5>Get the text with Python once you have identified</h5>
-<button>Click me!</button>
+<h5>Get the all of the text with Python once you have identified it</h5>
+<button class="cm">Click me!</button>
  <br>
 <h5 class="where"></h5>
  <br>
@@ -71,7 +71,7 @@
   $(document).ready(function(){
     // jQuery Code in here
     $("#hint").click(function(){
-    $("h5.tip").text("This is a slight 'Trick Question' - but there is definitely more secret.text to be found...Good luck!")
+    $("h5.tip").text("There is more secret.text to be found (developer tools) Good luck!")
   })
 })
 </script>
